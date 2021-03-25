@@ -1,8 +1,11 @@
+terraform{
+  required_version = ">=0,12,26"
+}
 
 data "aws_ami" "nomad_consul" {
   most_recent = true
 
-
+#Altera valor pela AMI criada
   owners = ["562637147889"]
 
   filter {
