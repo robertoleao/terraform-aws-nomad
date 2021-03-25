@@ -1,0 +1,1 @@
+packer build nomad-consul.json
