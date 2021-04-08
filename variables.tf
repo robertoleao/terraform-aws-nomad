@@ -2,13 +2,13 @@
 variable "ami_id" {
   description = " AMI criada com o packer"
   type        = string
-  default     = null
+  default     = "ami-014b81dd766774360"
 }
 
 variable "cluster_name" {
   description = "Nome do cluster"
   type        = string
-  default     = "nomad"
+  default     = "nomad-example"
 }
 
 variable "instance_type" {

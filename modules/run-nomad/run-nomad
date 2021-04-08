@@ -1,5 +1,5 @@
-#!/bin/bash
-# This script is used to configure and run Nomad on an AWS server.
+
+# Este script é usado para configurar e executar o Nomad em um servidor AWS
 
 set -e
 

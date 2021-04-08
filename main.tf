@@ -1,26 +1,23 @@
 terraform{
-  required_version = ">=0,12,26"
+  required_version = ">=0.12.26"
+}
+provider "aws" {
+  profile = "souunit"
+  region  = "us-east-1"
 }
 
 data "aws_ami" "nomad_consul" {
   most_recent = true
-
-#Altera valor pela AMI criada
-  owners = ["562637147889"]
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
+  owners = ["254753406351"]
 
   filter {
     name   = "is-public"
-    values = ["true"]
+    values = ["false"]
   }
 
   filter {
     name   = "name"
-    values = ["nomad-consul-ubuntu-*"]
+    values = ["nomad-consul-ubuntu18-*"]
   }
 }
 
@@ -34,7 +31,7 @@ module "servers" {
   cluster_tag_key   = var.cluster_tag_key
   cluster_tag_value = var.cluster_tag_value
 
-  ami_id    = var.ami_id == null ? data.aws_ami.nomad_consul.image_id : var.ami_id
+  ami_id    = var.ami_id
   user_data = data.template_file.user_data_server.rendered
 
   vpc_id     = data.aws_vpc.default.id
@@ -88,7 +85,7 @@ module "clients" {
   max_size         = var.num_clients
   desired_capacity = var.num_clients
 
-  ami_id    = var.ami_id == null ? data.aws_ami.nomad_consul.image_id : var.ami_id
+  ami_id    = var.ami_id
   user_data = data.template_file.user_data_client.rendered
 
   vpc_id     = data.aws_vpc.default.id
