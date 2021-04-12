@@ -3,7 +3,9 @@
 
 
 
+```HashiCorp Configuration Language
+terraform init
+terrafomr plan
+terraform applay
+```
 
-$ terraform init
-$ terrafomr plan
-$ terraform applay
