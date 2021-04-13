@@ -2,6 +2,12 @@
 
 ![Capa da materia](https://raw.githubusercontent.com/robertoleao/terraform-aws-nomad/master/images/packer.png)
 
+
+Aqui vc encontrara as pasta :
+
+- nomad-consul-ami - Codigo para iniciar a criação do AMI do projeto
+- root-example - Pasta com script
+
 Sera utilizado a ferramenta Packer para criar AMIs (Amazon Machine Images, imagens de máquinas da Amazon) que têm nômades e cônsul instalados em cima de:
 
 Ubuntu 18.04
