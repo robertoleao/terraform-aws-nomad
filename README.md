@@ -1,4 +1,4 @@
-# terraform-aws-nomad
+# Nomad na AWS com Terraform
 
 ### Pré-requisitos
 
@@ -10,26 +10,15 @@ Vamos começar gerando sua imagem pesonalizada AMI no AWS - https://github.com/r
 
 Feito a primeira parte, altere as informacao necessarias no codigo como credecias de login na aws e o codigo de proprietario da AMI que foi criado.
 
-
 ![Capa da materia](https://raw.githubusercontent.com/robertoleao/terraform-aws-nomad/master/images/codigo-exe.jpeg)
 <p align="center">Exemplo de onde altera as informaçoes no codigo</p>
 
+Feito todos as alterações e só roda o comandos do terraform.
+
 ```HashiCorp Configuration Language
 terraform init
-terrafomr plan
-terraform applay
+terraform apply
 ```
-
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-
-
-
-
-
 
 ### Autor
 ---
@@ -40,6 +29,6 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
  <sub><b>Roberto Leão</b></sub></a> <a  a>
 
 
-Feito com ❤️ por Roberto Leão 👋🏽 Entre em contato!
+Feito por Roberto Leão 👋🏽 Entre em contato!
 
  [![Linkedin Badge](https://img.shields.io/badge/-Roberto-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/roberto-leao/) 

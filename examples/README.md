@@ -20,8 +20,10 @@ Essas AMIs terão o Cônsul e o Nômade instalados e configurados para se juntar
 1. git clone 
 2. instale o Packer - [link de apoio](https://learn.hashicorp.com/tutorials/packer/getting-started-install)
 3. Configure as credencias AWS no codigo - [link de apoio](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
-4. Rode o codigo na pasta `/examples` :
+4. Rode o comando na pasta `examples/nomad-consul-ami` :
 
 ```HashiCorp Configuration Language
 packer build nomad-consul.json
 ```
+
+Apos o termino da compilação, ela irá produzir o ID da nova AMI, Anote esse numero vc pode encontra esse ID no console da AWS
